@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SummitsBridge Consulting | CFO Advisory & Financial Services Sri Lanka</title>
-    <meta name="description" content="SummitsBridge Consulting provides expert CFO advisory, fractional CFO services, financial stabilisation, and outsourced finance support to SMEs and owner-managed businesses in Sri Lanka and internationally.">
-    <meta name="keywords" content="CFO advisory services, Fractional CFO services, Outsourced finance services Sri Lanka, SME financial consulting, Business turnaround advisory, Cash flow management consulting, Working capital improvement services, Financial control and governance advisory, Finance transformation consulting, Profitability improvement for SMEs, Cost optimisation consulting services, Financial planning and forecasting services, Business financial restructuring support, Debt restructuring and bank negotiation support, CFO services for family businesses, Financial reporting and MIS implementation, Finance systems and process improvement, Strategic financial advisory services, Corporate finance advisory Middle East, SME growth and expansion financial support, Business performance improvement consulting, Interim CFO services Sri Lanka, Virtual CFO services, Financial risk management advisory, Budgeting and business planning services, Investment and capital allocation advisory, Financial due diligence services, Finance outsourcing for SMEs, Accounting and finance support services, CFO support for startups and growing businesses">
+    <meta name="description"
+        content="SummitsBridge Consulting provides expert CFO advisory, fractional CFO services, financial stabilisation, and outsourced finance support to SMEs and owner-managed businesses in Sri Lanka and internationally.">
+    <meta name="keywords"
+        content="CFO advisory services, Fractional CFO services, Outsourced finance services Sri Lanka, SME financial consulting, Business turnaround advisory, Cash flow management consulting, Working capital improvement services, Financial control and governance advisory, Finance transformation consulting, Profitability improvement for SMEs, Cost optimisation consulting services, Financial planning and forecasting services, Business financial restructuring support, Debt restructuring and bank negotiation support, CFO services for family businesses, Financial reporting and MIS implementation, Finance systems and process improvement, Strategic financial advisory services, Corporate finance advisory Middle East, SME growth and expansion financial support, Business performance improvement consulting, Interim CFO services Sri Lanka, Virtual CFO services, Financial risk management advisory, Budgeting and business planning services, Investment and capital allocation advisory, Financial due diligence services, Finance outsourcing for SMEs, Accounting and finance support services, CFO support for startups and growing businesses">
     <meta property="og:title" content="SummitsBridge Consulting | Hands-On CFO Support for Business Owners">
-    <meta property="og:description" content="We work with business owners and leadership teams to fix financial issues, improve performance, and bring structure to how the business is run.">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta property="og:description"
+        content="We work with business owners and leadership teams to fix financial issues, improve performance, and bring structure to how the business is run.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --navy: #1a3558;
@@ -143,6 +148,7 @@
             z-index: 1000;
         }
 
+        .has-dropdown.open .dropdown,
         .has-dropdown:hover .dropdown {
             display: block;
         }
@@ -1113,7 +1119,7 @@
                 background: #ffffff;
                 padding: 1rem 0;
                 border-top: 1px solid rgba(26, 53, 88, 0.1);
-                box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
                 z-index: 999;
             }
 
@@ -1306,16 +1312,19 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a id="nl-home" onclick="showPage('home')">Home</a></li>
                 <li class="has-dropdown" id="li-services">
-                    <a id="nl-services">Our Services</a>
+                    <a id="nl-services"
+                        onclick="this.parentElement.classList.toggle('open'); event.stopPropagation();">Our Services</a>
                     <div class="dropdown">
-                        <a onclick="showPage('stabilisation')">Financial Stability <span class="amp">&amp;</span> Turnaround</a>
+                        <a onclick="showPage('stabilisation')">Financial Stability <span class="amp">&amp;</span>
+                            Turnaround</a>
                         <a onclick="showPage('cfo')">Fractional CFO Support</a>
-                        <a onclick="showPage('outsourced')">Outsourced Finance <span class="amp">&amp;</span> Accounting</a>
+                        <a onclick="showPage('outsourced')">Outsourced Finance <span class="amp">&amp;</span>
+                            Accounting</a>
                     </div>
                 </li>
                 <li><a id="nl-about" onclick="showPage('about')">About Us</a></li>
                 <li><a id="nl-blog" onclick="showPage('blog')">Insights</a></li>
-                <li class="nav-cta"><a id="nl-contact" onclick="showPage('contact')">Contact</a></li>
+                <li class="nav-cta"><a id="nl-contact" onclick="showPage('contact')">Contact Us</a></li>
             </ul>
             <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
         </div>
@@ -1325,13 +1334,13 @@
 
         <!-- Hero -->
         <div class="hero">
-            <div class="hero-img"
-                style="background-image:url('image2.jpeg')">
+            <div class="hero-img" style="background-image:url('image2.jpeg')">
             </div>
             <div class="hero-tint"></div>
             <div class="hero-body">
-                <h1>Hands-On CFO Support for Business Owners</h1>
-                <p class="hero-sub">We work with business owners and leadership teams to fix financial issues, improve performance, and bring structure to how the business is run.</p>
+                <h1>Hands-On CFO Support</h1>
+                <p class="hero-sub">We work with business owners and leadership teams to fix financial issues, improve
+                    performance, and bring structure to how the business is run.</p>
                 <div style="display:flex;gap:1rem;flex-wrap:wrap;">
                     <button class="btn btn-gold" onclick="showPage('contact')">Contact Us</button>
                 </div>
@@ -1341,7 +1350,8 @@
         <section style="background:var(--white)">
             <div class="wrap">
                 <div style="max-width:780px;">
-                    <p class="lead" style="margin-bottom:1.2rem;">Most businesses do not fail because of lack of effort &mdash; they struggle because:</p>
+                    <p class="lead" style="margin-bottom:1.2rem;">Most businesses do not fail because of lack of effort
+                        &mdash; they struggle because:</p>
                     <ul class="bullet-list" style="max-width:680px;margin-bottom:1.5rem;">
                         <li>Cash is tight even when sales are growing</li>
                         <li>Profitability is unclear or declining</li>
@@ -1359,16 +1369,25 @@
             <div class="wrap">
                 <div style="max-width:820px;">
                     <h2 class="h2" style="color:var(--accent-blue);margin-bottom:0.5rem;">What We Help You With</h2>
-                    <p class="lead" style="margin-bottom:1.2rem;">We support you across the key financial areas that directly impact your business:</p>
+                    <p class="lead" style="margin-bottom:1.2rem;">We support you across the key financial areas that
+                        directly impact your business:</p>
                     <ul class="bullet-list" style="max-width:760px;">
-                        <li><strong>Cash Flow &amp; Liquidity</strong> &mdash; ensuring you have visibility and control over cash at all times</li>
-                        <li><strong>Profitability &amp; Cost Control</strong> &mdash; understanding where money is made and where it is lost</li>
-                        <li><strong>Financial Reporting &amp; MIS</strong> &mdash; simple, clear reports that help you make decisions</li>
-                        <li><strong>Financial Controls &amp; Governance</strong> &mdash; bringing discipline and structure to how finances are managed</li>
-                        <li><strong>Banking &amp; Funding Support</strong> &mdash; helping you manage lenders, negotiate facilities, and restructure where needed</li>
-                        <li><strong>Budgeting &amp; Business Planning</strong> &mdash; building realistic plans aligned to your business</li>
-                        <li><strong>Growth &amp; Expansion Decisions</strong> &mdash; evaluating investments, expansion, and new opportunities</li>
-                        <li><strong>Ongoing CFO Support</strong> &mdash; acting as a financial partner to support your day-to-day decisions</li>
+                        <li><strong>Cash Flow &amp; Liquidity</strong> &mdash; ensuring you have visibility and control
+                            over cash at all times</li>
+                        <li><strong>Profitability &amp; Cost Control</strong> &mdash; understanding where money is made
+                            and where it is lost</li>
+                        <li><strong>Financial Reporting &amp; MIS</strong> &mdash; simple, clear reports that help you
+                            make decisions</li>
+                        <li><strong>Financial Controls &amp; Governance</strong> &mdash; bringing discipline and
+                            structure to how finances are managed</li>
+                        <li><strong>Banking &amp; Funding Support</strong> &mdash; helping you manage lenders, negotiate
+                            facilities, and restructure where needed</li>
+                        <li><strong>Budgeting &amp; Business Planning</strong> &mdash; building realistic plans aligned
+                            to your business</li>
+                        <li><strong>Growth &amp; Expansion Decisions</strong> &mdash; evaluating investments, expansion,
+                            and new opportunities</li>
+                        <li><strong>Ongoing CFO Support</strong> &mdash; acting as a financial partner to support your
+                            day-to-day decisions</li>
                     </ul>
                 </div>
             </div>
@@ -1380,14 +1399,17 @@
                 <div style="max-width:780px;">
                     <h2 class="h2" style="color:var(--accent-blue);margin-bottom:0.5rem;">How We Work</h2>
                     <p class="lead" style="margin-bottom:1rem;">We do not just advise &mdash; we get involved.</p>
-                    <p class="lead" style="margin-bottom:1.2rem;">Our approach is practical, hands-on, and focused on execution:</p>
+                    <p class="lead" style="margin-bottom:1.2rem;">Our approach is practical, hands-on, and focused on
+                        execution:</p>
                     <ul class="bullet-list" style="max-width:680px;margin-bottom:1.5rem;">
                         <li>We simplify complex financial information</li>
                         <li>We identify the real issues &mdash; not just symptoms</li>
                         <li>We work alongside you to implement solutions</li>
                         <li>We bring discipline without over-complicating your business</li>
                     </ul>
-                    <p style="font-size:0.9rem;font-style:italic;color:var(--text-muted);border-left:2px solid var(--gold);padding-left:1rem;">Our work is professional, discreet, disciplined and focused on results.</p>
+                    <p
+                        style="font-size:0.9rem;font-style:italic;color:var(--text-muted);border-left:2px solid var(--gold);padding-left:1rem;">
+                        Our work is professional, discreet, disciplined and focused on results.</p>
                 </div>
             </div>
         </section>
@@ -1399,39 +1421,69 @@
             </div>
             <div class="wrap">
                 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
-                    <div style="background:var(--navy-deep);padding:2.5rem 2rem;border-top:3px solid var(--gold);border-radius:2px;cursor:pointer;" onclick="showPage('stabilisation')">
-                        <div style="font-family:'Playfair Display',serif;font-size:2rem;color:rgba(184,148,58,0.45);line-height:1;margin-bottom:1rem;">1</div>
-                        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;line-height:1.35;margin-bottom:0.9rem;">Financial Stability &amp; Turnaround</h3>
-                        <p style="font-size:0.87rem;color:rgba(255,255,255,0.68);line-height:1.65;margin-bottom:0.7rem;">If your business is under pressure &mdash; losses, cash flow issues, or bank challenges &mdash; we help you stabilise and regain control.</p>
-                        <ul style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:1rem;padding-left:1.2rem;">
+                    <div style="background:var(--navy-deep);padding:2.5rem 2rem;border-top:3px solid var(--gold);border-radius:2px;cursor:pointer;"
+                        onclick="showPage('stabilisation')">
+                        <div
+                            style="font-family:'Playfair Display',serif;font-size:2rem;color:rgba(184,148,58,0.45);line-height:1;margin-bottom:1rem;">
+                            1</div>
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;line-height:1.35;margin-bottom:0.9rem;">
+                            Financial Stability &amp; Turnaround</h3>
+                        <p
+                            style="font-size:0.87rem;color:rgba(255,255,255,0.68);line-height:1.65;margin-bottom:0.7rem;">
+                            If your business is under pressure &mdash; losses, cash flow issues, or bank challenges
+                            &mdash; we help you stabilise and regain control.</p>
+                        <ul
+                            style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:1rem;padding-left:1.2rem;">
                             <li>Improving cash flow</li>
                             <li>Reducing losses</li>
                             <li>Strengthening financial discipline</li>
                             <li>Bringing the business back to a stable position</li>
                         </ul>
-                        <span class="mandate-link" onclick="event.stopPropagation();showPage('stabilisation')">&rarr; Learn More</span>
+                        <span class="mandate-link" onclick="event.stopPropagation();showPage('stabilisation')">&rarr;
+                            Learn More</span>
                     </div>
-                    <div style="background:var(--navy-deep);padding:2.5rem 2rem;border-top:3px solid var(--gold);border-radius:2px;cursor:pointer;" onclick="showPage('cfo')">
-                        <div style="font-family:'Playfair Display',serif;font-size:2rem;color:rgba(184,148,58,0.45);line-height:1;margin-bottom:1rem;">2</div>
-                        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;line-height:1.35;margin-bottom:0.9rem;">Fractional CFO Support</h3>
-                        <p style="font-size:0.87rem;color:rgba(255,255,255,0.68);line-height:1.65;margin-bottom:0.7rem;">If your business is growing but lacks senior financial leadership, we provide ongoing CFO support without the cost of a full-time hire.</p>
-                        <ul style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:1rem;padding-left:1.2rem;">
+                    <div style="background:var(--navy-deep);padding:2.5rem 2rem;border-top:3px solid var(--gold);border-radius:2px;cursor:pointer;"
+                        onclick="showPage('cfo')">
+                        <div
+                            style="font-family:'Playfair Display',serif;font-size:2rem;color:rgba(184,148,58,0.45);line-height:1;margin-bottom:1rem;">
+                            2</div>
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;line-height:1.35;margin-bottom:0.9rem;">
+                            Fractional CFO Support</h3>
+                        <p
+                            style="font-size:0.87rem;color:rgba(255,255,255,0.68);line-height:1.65;margin-bottom:0.7rem;">
+                            If your business is growing but lacks senior financial leadership, we provide ongoing CFO
+                            support without the cost of a full-time hire.</p>
+                        <ul
+                            style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:1rem;padding-left:1.2rem;">
                             <li>Improve financial visibility</li>
                             <li>Strengthen decision-making</li>
                             <li>Build structure and discipline as you grow</li>
                         </ul>
-                        <span class="mandate-link" onclick="event.stopPropagation();showPage('cfo')">&rarr; Learn More</span>
+                        <span class="mandate-link" onclick="event.stopPropagation();showPage('cfo')">&rarr; Learn
+                            More</span>
                     </div>
-                    <div style="background:var(--navy-deep);padding:2.5rem 2rem;border-top:3px solid var(--gold);border-radius:2px;cursor:pointer;" onclick="showPage('outsourced')">
-                        <div style="font-family:'Playfair Display',serif;font-size:2rem;color:rgba(184,148,58,0.45);line-height:1;margin-bottom:1rem;">3</div>
-                        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;line-height:1.35;margin-bottom:0.9rem;">Outsourced Finance &amp; Accounting</h3>
-                        <p style="font-size:0.87rem;color:rgba(255,255,255,0.68);line-height:1.65;margin-bottom:0.7rem;">If your finance function needs structure, reliability, and control, we provide managed finance support with proper oversight.</p>
-                        <ul style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:1rem;padding-left:1.2rem;">
+                    <div style="background:var(--navy-deep);padding:2.5rem 2rem;border-top:3px solid var(--gold);border-radius:2px;cursor:pointer;"
+                        onclick="showPage('outsourced')">
+                        <div
+                            style="font-family:'Playfair Display',serif;font-size:2rem;color:rgba(184,148,58,0.45);line-height:1;margin-bottom:1rem;">
+                            3</div>
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;line-height:1.35;margin-bottom:0.9rem;">
+                            Outsourced Finance &amp; Accounting</h3>
+                        <p
+                            style="font-size:0.87rem;color:rgba(255,255,255,0.68);line-height:1.65;margin-bottom:0.7rem;">
+                            If your finance function needs structure, reliability, and control, we provide managed
+                            finance support with proper oversight.</p>
+                        <ul
+                            style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:1rem;padding-left:1.2rem;">
                             <li>Accurate and timely reporting</li>
                             <li>Clear processes and controls</li>
                             <li>Reliable financial information for decision-making</li>
                         </ul>
-                        <span class="mandate-link" onclick="event.stopPropagation();showPage('outsourced')">&rarr; Learn More</span>
+                        <span class="mandate-link" onclick="event.stopPropagation();showPage('outsourced')">&rarr; Learn
+                            More</span>
                     </div>
                 </div>
             </div>
@@ -1442,22 +1494,28 @@
             <div class="wrap">
                 <h2 class="h2" style="color:var(--accent-blue);margin-bottom:1rem;">Leadership</h2>
                 <div class="leadership-text">
-                    <p>SummitsBridge Consulting is led by Saliya Jayaweera, a former Partner of a Big 4 accounting firm and a senior finance leader with over 30 years of experience.</p>
-                    <p style="margin-top:0.8rem;">His experience spans banking, corporate leadership, restructuring, and advisory &mdash; combining strong financial discipline with practical business understanding.</p>
-                    <button class="btn btn-navy" onclick="showPage('about')" style="margin-top:1.2rem;">Learn More</button>
+                    <p>SummitsBridge Consulting is led by Saliya Jayaweera, a former Partner of a Big 4 accounting firm
+                        and a senior finance leader with over 30 years of experience.</p>
+                    <p style="margin-top:0.8rem;">His experience spans banking, corporate leadership, restructuring, and
+                        advisory &mdash; combining strong financial discipline with practical business understanding.
+                    </p>
+                    <button class="btn btn-navy" onclick="showPage('about')" style="margin-top:1.2rem;">Learn
+                        More</button>
                 </div>
             </div>
         </section>
 
-        <div style="text-align:center;padding:2rem;background:var(--cream-dark);"><p style="font-size:1.1rem;font-family:'Playfair Display',serif;color:var(--accent-blue);font-weight:600;">Professional. Discreet. Disciplined.</p></div>
+        <div style="text-align:center;padding:2rem;background:var(--cream-dark);">
+            <p style="font-size:1.1rem;font-family:'Playfair Display',serif;color:var(--accent-blue);font-weight:600;">
+                Professional. Discreet. Disciplined.</p>
+        </div>
 
     </div>
 
     <div id="page-stabilisation" class="page">
 
         <div class="page-hero">
-            <div class="page-hero-img"
-                style="background-image:url('image3.jpeg')">
+            <div class="page-hero-img" style="background-image:url('image3.jpeg')">
             </div>
             <div class="page-hero-tint"></div>
             <div class="page-hero-body">
@@ -1468,8 +1526,12 @@
 
         <section style="background:var(--white)">
             <div class="wrap">
-                <p class="lead" style="margin-bottom:1.2rem;">Businesses facing sustained losses, tightening liquidity, or increasing bank pressure require calm, experienced financial intervention. Often, owners are working harder than ever &mdash; yet profitability declines and cash flow visibility weakens.</p>
-                <p class="lead" style="margin-bottom:1.2rem;">SummitsBridge Consulting provides structured financial stabilisation and turnaround advisory services for SMEs and owner-managed businesses navigating operational and financial strain.</p>
+                <p class="lead" style="margin-bottom:1.2rem;">Businesses facing sustained losses, tightening liquidity,
+                    or increasing bank pressure require calm, experienced financial intervention. Often, owners are
+                    working harder than ever &mdash; yet profitability declines and cash flow visibility weakens.</p>
+                <p class="lead" style="margin-bottom:1.2rem;">SummitsBridge Consulting provides structured financial
+                    stabilisation and turnaround advisory services for SMEs and owner-managed businesses navigating
+                    operational and financial strain.</p>
                 <p class="lead" style="margin-bottom:1.5rem;">We work alongside owners, boards, and lenders to:</p>
                 <ul class="bullet-list" style="max-width:600px;">
                     <li>Restore financial clarity</li>
@@ -1525,7 +1587,8 @@
                 <div class="section-label">Selected Experience &mdash; Sri Lanka</div>
                 <div class="cases" style="grid-template-columns:1fr;">
                     <div class="case">
-                        <h4>Large Scale Production Business &mdash; Liquidity <span class="amp">&amp;</span> Margin Recovery</h4>
+                        <h4>Large Scale Production Business &mdash; Liquidity <span class="amp">&amp;</span> Margin
+                            Recovery</h4>
                         <p>Engaged during a period of sustained monthly losses and acute liquidity pressure.</p>
                         <p>Cash flow was stabilised, banking facilities restructured, product economics realigned, and
                             working
@@ -1533,7 +1596,8 @@
                             footing.</p>
                     </div>
                     <div class="case">
-                        <h4>Highly Leveraged Manufacturing Group &mdash; Debt Restructuring <span class="amp">&amp;</span> Operational Reset</h4>
+                        <h4>Highly Leveraged Manufacturing Group &mdash; Debt Restructuring <span
+                                class="amp">&amp;</span> Operational Reset</h4>
                         <p>Developed a structured multi-year recovery plan, supported lender negotiations,
                             re-established governance
                             discipline, and aligned production capacity to realistic demand levels.</p>
@@ -1541,14 +1605,16 @@
                         </p>
                     </div>
                     <div class="case">
-                        <h4>Technology <span class="amp">&amp;</span> Telecommunications Business &mdash; Structural Reset</h4>
+                        <h4>Technology <span class="amp">&amp;</span> Telecommunications Business &mdash; Structural
+                            Reset</h4>
                         <p>Identified weak product profitability visibility and fragmented systems oversight.</p>
                         <p>Implemented cost realignment, performance metrics, and disciplined capital oversight &mdash;
                             restoring
                             accountability and stabilising financial performance.</p>
                     </div>
                     <div class="case">
-                        <h4>Diversified Family-Owned Conglomerate &mdash; Governance Reset <span class="amp">&amp;</span> Strategic Exit</h4>
+                        <h4>Diversified Family-Owned Conglomerate &mdash; Governance Reset <span
+                                class="amp">&amp;</span> Strategic Exit</h4>
                         <p>Appointed Group CFO to stabilise and prepare a multi-industry conglomerate for divestment
                             following
                             governance breakdown.</p>
@@ -1563,15 +1629,15 @@
             </div>
         </section>
 
-        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact Us</button></div>
+        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact
+                Us</button></div>
 
     </div>
 
     <div id="page-cfo" class="page">
 
         <div class="page-hero">
-            <div class="page-hero-img"
-                style="background-image:url('image4.jpeg')">
+            <div class="page-hero-img" style="background-image:url('image4.jpeg')">
             </div>
             <div class="page-hero-tint"></div>
             <div class="page-hero-body">
@@ -1583,8 +1649,12 @@
         <section style="background:var(--white)">
             <div class="wrap">
                 <div style="max-width:780px;">
-                    <p class="lead" style="margin-bottom:1.2rem;">As businesses grow, financial complexity increases &mdash; but appointing a full-time CFO is not always practical. SummitsBridge Consulting provides fractional CFO services delivering senior-level financial leadership without permanent executive overhead.</p>
-                    <p class="lead">We provide disciplined oversight aligned with regional commercial realities and long-term strategic direction.</p>
+                    <p class="lead" style="margin-bottom:1.2rem;">As businesses grow, financial complexity increases
+                        &mdash; but appointing a full-time CFO is not always practical. SummitsBridge Consulting
+                        provides fractional CFO services delivering senior-level financial leadership without permanent
+                        executive overhead.</p>
+                    <p class="lead">We provide disciplined oversight aligned with regional commercial realities and
+                        long-term strategic direction.</p>
                 </div>
             </div>
         </section>
@@ -1623,15 +1693,15 @@
             </div>
         </section>
 
-        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact Us</button></div>
+        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact
+                Us</button></div>
 
     </div>
 
     <div id="page-outsourced" class="page">
 
         <div class="page-hero">
-            <div class="page-hero-img"
-                style="background-image:url('image5.jpeg')">
+            <div class="page-hero-img" style="background-image:url('image5.jpeg')">
             </div>
             <div class="page-hero-tint"></div>
             <div class="page-hero-body">
@@ -1643,8 +1713,12 @@
         <section style="background:var(--white)">
             <div class="wrap">
                 <div style="max-width:780px;">
-                    <p class="lead" style="margin-bottom:1.2rem;">Businesses increasingly require outsourced finance solutions that deliver more than transactional processing. SummitsBridge Consulting provides governance-led outsourced finance and accounting services designed to strengthen reporting reliability, financial control, and operational discipline.</p>
-                    <p class="lead">Our model combines senior oversight with a Sri Lanka-based team of fully qualified Chartered Accountants &mdash; ensuring technical competence and dependable execution.</p>
+                    <p class="lead" style="margin-bottom:1.2rem;">Businesses increasingly require outsourced finance
+                        solutions that deliver more than transactional processing. SummitsBridge Consulting provides
+                        governance-led outsourced finance and accounting services designed to strengthen reporting
+                        reliability, financial control, and operational discipline.</p>
+                    <p class="lead">Our model combines senior oversight with a Sri Lanka-based team of fully qualified
+                        Chartered Accountants &mdash; ensuring technical competence and dependable execution.</p>
                 </div>
             </div>
         </section>
@@ -1655,7 +1729,8 @@
                     <div class="section-label">A Governance-Led Model</div>
                     <p style="font-size:0.95rem;color:var(--text-light);margin-bottom:0.5rem;line-height:1.75;">
                         Outsourcing should enhance financial oversight &mdash; not weaken it.</p>
-                    <p style="font-size:0.95rem;color:var(--text-light);margin-bottom:0.5rem;line-height:1.75;">Our framework includes:</p>
+                    <p style="font-size:0.95rem;color:var(--text-light);margin-bottom:0.5rem;line-height:1.75;">Our
+                        framework includes:</p>
                     <ul class="bullet-list" style="margin-bottom:1rem;">
                         <li>Documented Standard Operating Procedures</li>
                         <li>Segregation of duties in processing and review</li>
@@ -1686,15 +1761,15 @@
             </div>
         </section>
 
-        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact Us</button></div>
+        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact
+                Us</button></div>
 
     </div>
 
     <div id="page-about" class="page">
 
         <div class="page-hero">
-            <div class="page-hero-img"
-                style="background-image:url('image6.jpeg')">
+            <div class="page-hero-img" style="background-image:url('image6.jpeg')">
             </div>
             <div class="page-hero-tint"></div>
             <div class="page-hero-body">
@@ -1706,8 +1781,14 @@
         <section style="background:var(--white)">
             <div class="wrap">
                 <div style="max-width:780px;">
-                    <p class="lead" style="margin-bottom:1.2rem;">SummitsBridge Consulting was founded by a senior finance professional with more than three decades of experience across international banking, corporate finance leadership, board governance, and restructuring advisory.</p>
-                    <p style="font-size:0.9rem;font-style:italic;color:var(--text-muted);border-left:2px solid var(--gold);padding-left:1rem;margin-bottom:2rem;">Following over 20 years in commercial and banking leadership roles across Sri Lanka and the Middle East, he was appointed as a Partner within a Big 4 accounting firm &mdash; combining institutional advisory standards with practical commercial execution.</p>
+                    <p class="lead" style="margin-bottom:1.2rem;">SummitsBridge Consulting was founded by a senior
+                        finance professional with more than three decades of experience across international banking,
+                        corporate finance leadership, board governance, and restructuring advisory.</p>
+                    <p
+                        style="font-size:0.9rem;font-style:italic;color:var(--text-muted);border-left:2px solid var(--gold);padding-left:1rem;margin-bottom:2rem;">
+                        Following over 20 years in commercial and banking leadership roles across Sri Lanka and the
+                        Middle East, he was appointed as a Partner within a Big 4 accounting firm &mdash; combining
+                        institutional advisory standards with practical commercial execution.</p>
 
                     <div class="section-label">Professional Background</div>
                     <ul class="bg-list">
@@ -1759,7 +1840,8 @@
             </div>
         </section>
 
-        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact Us</button></div>
+        <div style="text-align:center;padding:2rem;"><button class="btn btn-gold" onclick="showPage('contact')">Contact
+                Us</button></div>
 
     </div>
 
@@ -1767,8 +1849,7 @@
 
         <div id="blog-list-view">
             <div class="page-hero">
-                <div class="page-hero-img"
-                    style="background-image:url('image2.jpeg')">
+                <div class="page-hero-img" style="background-image:url('image2.jpeg')">
                 </div>
                 <div class="page-hero-tint"></div>
                 <div class="page-hero-body">
@@ -1780,9 +1861,8 @@
                 <div class="wrap">
                     <div class="blog-grid" id="blog-grid">
                         <div class="bcard blog-item" data-cat="stabilisation" onclick="showArticle('b1')">
-                            <div class="bcard-thumb"><img
-                                    src="image3.jpeg"
-                                    alt=""><span class="bcat">Stabilisation</span></div>
+                            <div class="bcard-thumb"><img src="image3.jpeg" alt=""><span
+                                    class="bcat">Stabilisation</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">March 2026</div>
                                 <h3>The Five Warning Signs Your Business Needs a Financial Stabilisation Advisor</h3>
@@ -1793,9 +1873,8 @@
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="cfo" onclick="showArticle('b2')">
-                            <div class="bcard-thumb"><img
-                                    src="image4.jpeg"
-                                    alt=""><span class="bcat">CFO Advisory</span></div>
+                            <div class="bcard-thumb"><img src="image4.jpeg" alt=""><span class="bcat">CFO
+                                    Advisory</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">February 2026</div>
                                 <h3>Why Growth-Stage Businesses Need Fractional CFO Leadership</h3>
@@ -1806,9 +1885,8 @@
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="governance" onclick="showArticle('b3')">
-                            <div class="bcard-thumb"><img
-                                    src="image2.jpeg"
-                                    alt=""><span class="bcat">Governance</span></div>
+                            <div class="bcard-thumb"><img src="image2.jpeg" alt=""><span
+                                    class="bcat">Governance</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">January 2026</div>
                                 <h3>Financial Governance in Owner-Managed Businesses</h3>
@@ -1819,9 +1897,8 @@
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="outsourced" onclick="showArticle('b4')">
-                            <div class="bcard-thumb"><img
-                                    src="image5.jpeg"
-                                    alt=""><span class="bcat">Outsourced Finance</span></div>
+                            <div class="bcard-thumb"><img src="image5.jpeg" alt=""><span class="bcat">Outsourced
+                                    Finance</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">December 2025</div>
                                 <h3>Outsourcing Finance: When It Strengthens Your Business</h3>
@@ -1832,9 +1909,8 @@
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="stabilisation" onclick="showArticle('b5')">
-                            <div class="bcard-thumb"><img
-                                    src="image3.jpeg"
-                                    alt=""><span class="bcat">Stabilisation</span></div>
+                            <div class="bcard-thumb"><img src="image3.jpeg" alt=""><span
+                                    class="bcat">Stabilisation</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">November 2025</div>
                                 <h3>Debt Restructuring in Practice: A Structured Approach for SMEs</h3>
@@ -1845,9 +1921,8 @@
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="cfo" onclick="showArticle('b6')">
-                            <div class="bcard-thumb"><img
-                                    src="image4.jpeg"
-                                    alt=""><span class="bcat">CFO Advisory</span></div>
+                            <div class="bcard-thumb"><img src="image4.jpeg" alt=""><span class="bcat">CFO
+                                    Advisory</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">October 2025</div>
                                 <h3>Cash Flow Visibility: The Most Undervalued Tool in Business Leadership</h3>
@@ -1886,56 +1961,69 @@
                 <div class="wrap">
                     <div class="blog-grid" id="blog-grid">
                         <div class="bcard blog-item" data-cat="stabilisation" onclick="showArticle('b1')">
-                            <div class="bcard-thumb"><img src="image3.jpeg" alt=""><span class="bcat">Stabilisation</span></div>
+                            <div class="bcard-thumb"><img src="image3.jpeg" alt=""><span
+                                    class="bcat">Stabilisation</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">March 2026</div>
                                 <h3>The Five Warning Signs Your Business Needs a Financial Stabilisation Advisor</h3>
-                                <p>Most business owners recognise financial pressure when it arrives &mdash; but the critical window for intervention is often far earlier.</p>
+                                <p>Most business owners recognise financial pressure when it arrives &mdash; but the
+                                    critical window for intervention is often far earlier.</p>
                                 <span class="bread">Read &rarr;</span>
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="cfo" onclick="showArticle('b2')">
-                            <div class="bcard-thumb"><img src="image4.jpeg" alt=""><span class="bcat">CFO Advisory</span></div>
+                            <div class="bcard-thumb"><img src="image4.jpeg" alt=""><span class="bcat">CFO
+                                    Advisory</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">February 2026</div>
                                 <h3>Why Growth-Stage Businesses Need Fractional CFO Leadership</h3>
-                                <p>As revenue grows, financial complexity often outpaces the organisation&rsquo;s ability to manage it effectively.</p>
+                                <p>As revenue grows, financial complexity often outpaces the organisation&rsquo;s
+                                    ability to manage it effectively.</p>
                                 <span class="bread">Read &rarr;</span>
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="governance" onclick="showArticle('b3')">
-                            <div class="bcard-thumb"><img src="image2.jpeg" alt=""><span class="bcat">Governance</span></div>
+                            <div class="bcard-thumb"><img src="image2.jpeg" alt=""><span
+                                    class="bcat">Governance</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">January 2026</div>
                                 <h3>Financial Governance in Owner-Managed Businesses</h3>
-                                <p>Strong financial governance is not reserved for large corporates. Owner-managed businesses that invest in the right controls early enjoy significantly better outcomes.</p>
+                                <p>Strong financial governance is not reserved for large corporates. Owner-managed
+                                    businesses that invest in the right controls early enjoy significantly better
+                                    outcomes.</p>
                                 <span class="bread">Read &rarr;</span>
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="outsourced" onclick="showArticle('b4')">
-                            <div class="bcard-thumb"><img src="image5.jpeg" alt=""><span class="bcat">Outsourced Finance</span></div>
+                            <div class="bcard-thumb"><img src="image5.jpeg" alt=""><span class="bcat">Outsourced
+                                    Finance</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">December 2025</div>
                                 <h3>Outsourcing Finance: When It Strengthens Your Business</h3>
-                                <p>Not all outsourcing models are equal. Governance-led outsourcing produces materially better results than transactional models.</p>
+                                <p>Not all outsourcing models are equal. Governance-led outsourcing produces materially
+                                    better results than transactional models.</p>
                                 <span class="bread">Read &rarr;</span>
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="stabilisation" onclick="showArticle('b5')">
-                            <div class="bcard-thumb"><img src="image3.jpeg" alt=""><span class="bcat">Stabilisation</span></div>
+                            <div class="bcard-thumb"><img src="image3.jpeg" alt=""><span
+                                    class="bcat">Stabilisation</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">November 2025</div>
                                 <h3>Debt Restructuring in Practice: A Structured Approach for SMEs</h3>
-                                <p>Negotiating with lenders during financial stress is as much a disciplined process as it is a relationship exercise.</p>
+                                <p>Negotiating with lenders during financial stress is as much a disciplined process as
+                                    it is a relationship exercise.</p>
                                 <span class="bread">Read &rarr;</span>
                             </div>
                         </div>
                         <div class="bcard blog-item" data-cat="cfo" onclick="showArticle('b6')">
-                            <div class="bcard-thumb"><img src="image4.jpeg" alt=""><span class="bcat">CFO Advisory</span></div>
+                            <div class="bcard-thumb"><img src="image4.jpeg" alt=""><span class="bcat">CFO
+                                    Advisory</span></div>
                             <div class="bcard-body">
                                 <div class="bdate">October 2025</div>
                                 <h3>Cash Flow Visibility: The Most Undervalued Tool in Business Leadership</h3>
-                                <p>Many businesses focus on profitability while underestimating the importance of real-time cash flow visibility.</p>
+                                <p>Many businesses focus on profitability while underestimating the importance of
+                                    real-time cash flow visibility.</p>
                                 <span class="bread">Read &rarr;</span>
                             </div>
                         </div>
@@ -1956,13 +2044,12 @@
     <div id="page-contact" class="page">
 
         <div class="page-hero">
-            <div class="page-hero-img"
-                style="background-image:url('image7.jpeg')">
+            <div class="page-hero-img" style="background-image:url('image7.jpeg')">
             </div>
             <div class="page-hero-tint"></div>
             <div class="page-hero-body">
-                <div class="eyebrow">Get in Touch</div>
-                <h1>Arrange a Confidential Consultation</h1>
+                <div class="eyebrow">Contact Us</div>
+                <h1>Arrange a Confidential Call</h1>
             </div>
         </div>
 
@@ -1972,14 +2059,17 @@
                     <div>
                         <div class="section-label">Contact Details</div>
                         <h2 class="h2" style="margin-bottom:0.5rem;">SummitsBridge Consulting</h2>
-                        <p style="font-size:0.95rem;color:var(--text-light);line-height:1.8;margin-bottom:1.5rem;">We welcome confidential enquiries from business owners, boards, and executives. All discussions are treated with complete discretion.</p>
+                        <p style="font-size:0.95rem;color:var(--text-light);line-height:1.8;margin-bottom:1.5rem;">We
+                            welcome confidential enquiries from business owners, boards, and executives. All discussions
+                            are treated with complete discretion.</p>
                         <ul class="contact-list">
                             <li>
                                 <div class="ci"><svg viewBox="0 0 24 24">
                                         <path
                                             d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                                     </svg></div>
-                                <div class="cl"><label>Email</label><a href="mailto:saliya@summitsbridge.com">saliya@summitsbridge.com</a></div>
+                                <div class="cl"><label>Email</label><a
+                                        href="mailto:saliya@summitsbridge.com">saliya@summitsbridge.com</a></div>
                             </li>
                             <li>
                                 <div class="ci"><svg viewBox="0 0 24 24">
@@ -1995,14 +2085,17 @@
                                         <path
                                             d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468C5.092 7.001 8.093 4 12.029 4c1.9 0 3.681.74 5.023 2.085 1.34 1.344 2.078 3.13 2.077 5.03z" />
                                     </svg></div>
-                                <div class="cl"><label>WhatsApp</label><a href="https://wa.me/94771133834">+94 77 113 3834</a></div>
+                                <div class="cl"><label>WhatsApp</label><a href="https://wa.me/94771133834">+94 77 113
+                                        3834</a></div>
                             </li>
                             <li>
                                 <div class="ci"><svg viewBox="0 0 24 24">
                                         <path
                                             d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                                     </svg></div>
-                                <div class="cl"><label>LinkedIn</label><a href="https://www.linkedin.com/in/saliya-jayaweera-a74787227/" target="_blank">Saliya Jayaweera</a></div>
+                                <div class="cl"><label>LinkedIn</label><a
+                                        href="https://www.linkedin.com/in/saliya-jayaweera-a74787227/"
+                                        target="_blank">Saliya Jayaweera</a></div>
                             </li>
                             <li style="border-bottom:none;">
                                 <div class="ci"><svg viewBox="0 0 24 24">
@@ -2019,16 +2112,19 @@
                         <div class="section-label">Send an Enquiry</div>
                         <h3>We will be in touch with you soon.</h3>
                         <div class="form-row" style="margin-top:1.5rem;">
-                            <div class="fg"><label>First Name <span style="color:var(--navy);">*</span></label><input type="text" placeholder="First name" required></div>
+                            <div class="fg"><label>First Name <span style="color:var(--navy);">*</span></label><input
+                                    type="text" placeholder="First name" required></div>
                             <div class="fg"><label>Last Name</label><input type="text" placeholder="Last name"></div>
                         </div>
-                        <div class="fg"><label>Email Address <span style="color:var(--navy);">*</span></label><input type="email" placeholder="your@email.com" required>
+                        <div class="fg"><label>Email Address <span style="color:var(--navy);">*</span></label><input
+                                type="email" placeholder="your@email.com" required>
                         </div>
                         <div class="fg"><label>Organisation</label><input type="text" placeholder="Company name"></div>
                         <div class="fg"><label>Message</label><textarea
                                 placeholder="Please briefly describe your situation or enquiry..."></textarea></div>
                         <button class="btn btn-navy" style="width:100%;" onclick="handleSubmit()">Send Enquiry</button>
-                        <p style="font-size:0.75rem;color:var(--text-muted);margin-top:1rem;text-align:center;">All enquiries are treated with complete confidentiality.</p>
+                        <p style="font-size:0.75rem;color:var(--text-muted);margin-top:1rem;text-align:center;">All
+                            enquiries are treated with complete confidentiality.</p>
                     </div>
                 </div>
             </div>
@@ -2037,41 +2133,80 @@
     </div>
 
     <footer>
-        <div style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.08);align-items:start;">
+        <div
+            style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.08);align-items:start;">
             <!-- Brand -->
             <div>
-                <img src="logo.jpg" alt="SummitsBridge Consulting" style="height:36px;display:block;margin-bottom:1rem;opacity:0.9;">
-                <p style="font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.5);max-width:280px;">Hands-on CFO support and financial advisory for SMEs and owner-managed businesses.</p>
-                <p style="margin-top:1rem;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);">Professional. Discreet. Disciplined.</p>
+                <img src="logo.jpg" alt="SummitsBridge Consulting"
+                    style="height:36px;display:block;margin-bottom:1rem;opacity:0.9;">
+                <p style="font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.5);max-width:280px;">Hands-on CFO
+                    support and financial advisory for SMEs and owner-managed businesses.</p>
+                <p
+                    style="margin-top:1rem;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);">
+                    Professional. Discreet. Disciplined.</p>
             </div>
             <!-- Services -->
             <div>
-                <h4 style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:1rem;font-weight:700;">Our Services</h4>
+                <h4
+                    style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:1rem;font-weight:700;">
+                    Our Services</h4>
                 <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-                    <li><span onclick="showPage('stabilisation')" style="font-size:0.84rem;color:rgba(255,255,255,0.45);cursor:pointer;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Financial Stability &amp; Turnaround</span></li>
-                    <li><span onclick="showPage('cfo')" style="font-size:0.84rem;color:rgba(255,255,255,0.45);cursor:pointer;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Fractional CFO Support</span></li>
-                    <li><span onclick="showPage('outsourced')" style="font-size:0.84rem;color:rgba(255,255,255,0.45);cursor:pointer;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Outsourced Finance &amp; Accounting</span></li>
+                    <li><span onclick="showPage('stabilisation')"
+                            style="font-size:0.84rem;color:rgba(255,255,255,0.45);cursor:pointer;transition:color 0.2s;"
+                            onmouseover="this.style.color='var(--gold)'"
+                            onmouseout="this.style.color='rgba(255,255,255,0.45)'">Financial Stability &amp;
+                            Turnaround</span></li>
+                    <li><span onclick="showPage('cfo')"
+                            style="font-size:0.84rem;color:rgba(255,255,255,0.45);cursor:pointer;transition:color 0.2s;"
+                            onmouseover="this.style.color='var(--gold)'"
+                            onmouseout="this.style.color='rgba(255,255,255,0.45)'">Fractional CFO Support</span></li>
+                    <li><span onclick="showPage('outsourced')"
+                            style="font-size:0.84rem;color:rgba(255,255,255,0.45);cursor:pointer;transition:color 0.2s;"
+                            onmouseover="this.style.color='var(--gold)'"
+                            onmouseout="this.style.color='rgba(255,255,255,0.45)'">Outsourced Finance &amp;
+                            Accounting</span></li>
                 </ul>
             </div>
             <!-- Contact -->
             <div>
-                <h4 style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:1rem;font-weight:700;">Contact</h4>
+                <h4
+                    style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:1rem;font-weight:700;">
+                    Contact</h4>
                 <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
-                    <li><a href="mailto:saliya@summitsbridge.com" style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">saliya@summitsbridge.com</a></li>
-                    <li><a href="tel:+94771133834" style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">+94 77 113 3834</a></li>
-                    <li><a href="https://wa.me/94771133834" style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">WhatsApp</a></li>
-                    <li><a href="https://www.linkedin.com/in/saliya-jayaweera-a74787227/" target="_blank" style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">LinkedIn</a></li>
-                    <li style="margin-top:0.4rem;"><span style="font-size:0.82rem;color:rgba(255,255,255,0.3);line-height:1.6;display:block;">531/2A Lake Road, Akuregoda<br>Thalangama South</span></li>
+                    <li><a href="mailto:saliya@summitsbridge.com"
+                            style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;"
+                            onmouseover="this.style.color='var(--gold)'"
+                            onmouseout="this.style.color='rgba(255,255,255,0.45)'">saliya@summitsbridge.com</a></li>
+                    <li><a href="tel:+94771133834"
+                            style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;"
+                            onmouseover="this.style.color='var(--gold)'"
+                            onmouseout="this.style.color='rgba(255,255,255,0.45)'">+94 77 113 3834</a></li>
+                    <li><a href="https://wa.me/94771133834"
+                            style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;"
+                            onmouseover="this.style.color='var(--gold)'"
+                            onmouseout="this.style.color='rgba(255,255,255,0.45)'">WhatsApp</a></li>
+                    <li><a href="https://www.linkedin.com/in/saliya-jayaweera-a74787227/" target="_blank"
+                            style="font-size:0.84rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;"
+                            onmouseover="this.style.color='var(--gold)'"
+                            onmouseout="this.style.color='rgba(255,255,255,0.45)'">LinkedIn</a></li>
+                    <li style="margin-top:0.4rem;"><span
+                            style="font-size:0.82rem;color:rgba(255,255,255,0.3);line-height:1.6;display:block;">531/2A
+                            Lake Road, Akuregoda<br>Thalangama South</span></li>
                 </ul>
             </div>
         </div>
-        <div style="max-width:1160px;margin:0 auto;padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.75rem;color:rgba(255,255,255,0.22);">
+        <div
+            style="max-width:1160px;margin:0 auto;padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.75rem;color:rgba(255,255,255,0.22);">
             <span>&copy; 2026 SummitsBridge Consulting (PVT) LTD. All rights reserved.</span>
-            <span onclick="showPage('contact')" style="cursor:pointer;color:rgba(255,255,255,0.35);transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Contact Us</span>
+            <span onclick="showPage('contact')"
+                style="cursor:pointer;color:rgba(255,255,255,0.35);transition:color 0.2s;"
+                onmouseover="this.style.color='var(--gold)'"
+                onmouseout="this.style.color='rgba(255,255,255,0.35)'">Contact Us</span>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
         var articles = {
             b1: {
                 cat: 'Stabilisation', date: 'March 2026',
@@ -2135,6 +2270,9 @@
             var nav = document.getElementById('main-nav');
             if (nav) nav.classList.remove('open');
 
+            var dropdowns = document.querySelectorAll('.has-dropdown');
+            for (var k = 0; k < dropdowns.length; k++) dropdowns[k].classList.remove('open');
+
             if (pageId === 'blog') {
                 var lv = document.getElementById('blog-list-view');
                 var av = document.getElementById('blog-article-view');
@@ -2160,7 +2298,7 @@
         /* Set initial history entry on load */
         (function () {
             var initial = location.hash ? location.hash.replace('#', '') : 'home';
-            var validPages = ['home','stabilisation','cfo','outsourced','about','blog','contact'];
+            var validPages = ['home', 'stabilisation', 'cfo', 'outsourced', 'about', 'blog', 'contact'];
             if (validPages.indexOf(initial) === -1) initial = 'home';
             history.replaceState({ page: initial }, '', '#' + initial);
             if (initial !== 'home') showPage(initial, false);
