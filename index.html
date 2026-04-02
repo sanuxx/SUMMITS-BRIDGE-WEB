@@ -2108,24 +2108,26 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/ajax/saliya@summitsbridge.com" method="POST" onsubmit="handleSubmit(event)">
                         <div class="section-label">Send an Enquiry</div>
                         <h3>We will be in touch with you soon.</h3>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
                         <div class="form-row" style="margin-top:1.5rem;">
                             <div class="fg"><label>First Name <span style="color:var(--navy);">*</span></label><input
-                                    type="text" placeholder="First name" required></div>
-                            <div class="fg"><label>Last Name</label><input type="text" placeholder="Last name"></div>
+                                    type="text" name="First Name" placeholder="First name" required></div>
+                            <div class="fg"><label>Last Name</label><input type="text" name="Last Name" placeholder="Last name"></div>
                         </div>
                         <div class="fg"><label>Email Address <span style="color:var(--navy);">*</span></label><input
-                                type="email" placeholder="your@email.com" required>
+                                type="email" name="Email" placeholder="your@email.com" required>
                         </div>
-                        <div class="fg"><label>Organisation</label><input type="text" placeholder="Company name"></div>
+                        <div class="fg"><label>Organisation</label><input type="text" name="Organisation" placeholder="Company name"></div>
                         <div class="fg"><label>Message</label><textarea
-                                placeholder="Please briefly describe your situation or enquiry..."></textarea></div>
-                        <button class="btn btn-navy" style="width:100%;" onclick="handleSubmit()">Send Enquiry</button>
+                                name="Message" placeholder="Please briefly describe your situation or enquiry..."></textarea></div>
+                        <button type="submit" class="btn btn-navy" style="width:100%;">Send Enquiry</button>
                         <p style="font-size:0.75rem;color:var(--text-muted);margin-top:1rem;text-align:center;">All
                             enquiries are treated with complete confidentiality.</p>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -2346,8 +2348,23 @@
             window.scrollTo(0, 0);
         }
 
-        function handleSubmit() {
-            alert('Thank you for your enquiry. We will be in touch with you soon.');
+        function handleSubmit(event) {
+            event.preventDefault();
+            var form = event.target;
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(function(response) {
+                if (response.ok) {
+                    alert('Thank you for your enquiry. We will be in touch with you soon.');
+                    form.reset();
+                } else {
+                    alert('Oops! There was a problem submitting your form. Please try again.');
+                }
+            }).catch(function(error) {
+                alert('Oops! There was a problem submitting your form. Please try again.');
+            });
         }
 
         window.addEventListener('scroll', function () {
